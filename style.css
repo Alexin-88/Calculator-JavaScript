@@ -61,6 +61,20 @@ button {
 }
 
 .operator:hover{
-    background-color: rgb(243, 5, 5);
+    background-color: rgb(5, 25, 243);
+}
+
+.c{
+    font-size: 1em;
+    background-color: rgba(255, 0, 0, 0.47);
+    color: white;
+    
+   
+}
+
+.c:hover{
+    background-color: red;
+    color: black;
+    /* font-weight: bold; */
 }
 

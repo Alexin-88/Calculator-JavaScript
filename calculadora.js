@@ -93,3 +93,43 @@ function result(){
     operator = '';
     
 }
+
+//Calculo de la raíz cuadrada.
+function sqrt(){
+    let result = Math.sqrt(firstNumber);
+
+    screen.innerText = result;
+
+    number=0;
+    firstNumber=result;
+}
+
+//Eliminar un caracter del número.
+function remove(){
+    
+    //Diferenciamos si estamos en el 1º o 2º numero
+    if(number == firstNumber){
+
+        number =  number.substring(0, number.length - 1);//eliminamos último elemento
+
+        if(number == ''){ //Si se acaban los núemero mostramos un 0
+            number = '0';
+        }
+
+        screen.innerText=number;
+        firstNumber=number; //Reajustamos el valor del 1º número.
+
+    }else{
+
+        number =  number.substring(0, number.length - 1);
+
+        if(number == ''){
+            number = '0';
+        }
+
+        screen.innerText=number;
+        secondNumber=number;   
+ 
+    }
+       
+}
