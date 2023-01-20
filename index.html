@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="calculadora.js" defer></script>
+</head>
+<body>
+    <h1>CALCULADORA CON JAVASCRIPT</h1>
+
+    <div>
+
+        <h2 id="screen">0</h2>
+        
+    
+        <table>
+            <!-- 1ª ROW -->
+            <tr>
+                <td><button class="number" onclick="createNumber('7')">7</button></td>
+                <td><button class="number" onclick="createNumber('8')">8</button></td>
+                <td><button class="number" onclick="createNumber('9')">9</button></td>
+                <td><button class="operator" onclick="assignOperator('+')">+</button></td>
+            </tr>
+
+            <!-- 2ª ROW -->
+            <tr>
+                <td><button class="number" onclick="createNumber('4')">4</button></td>
+                <td><button class="number" onclick="createNumber('5')">5</button></td>
+                <td><button class="number" onclick="createNumber('6')">6</button></td>
+                <td><button class="operator" onclick="assignOperator('-')">-</button></td>
+            </tr>
+
+            <!-- 3ª ROW -->
+            <tr>
+                <td><button class="number" onclick="createNumber('1')">1</button></td>
+                <td><button class="number" onclick="createNumber('2')">2</button></td>
+                <td><button class="number" onclick="createNumber('3')">3</button></td>
+                <td><button class="operator" onclick="assignOperator('*')">*</button></td>
+            </tr>
+
+            <!-- 4ª ROW -->
+            <tr>
+                <td colspan="2"><button class="number" onclick="createNumber('0')">0</button></td>
+                <td><button class="number" onclick="createNumber('.')">.</button></td>
+                <td><button class="operator" onclick="assignOperator('/')">/</button></td>
+            </tr>
+
+            <!-- 5ª ROW -->
+            <tr>
+                <td colspan="4"><button class="operator" onclick="result()">=</button></td>
+            </tr>
+        </table>
+
+    </div>
+    
+    
+</body>
+</html>
